@@ -1,0 +1,378 @@
+/*************************************************************
+*This controls all of the tabs on the admin page
+**************************************************************/
+
+div.tab{
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+div.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-family: "Tahoma", Geneva, sans-serif;
+    font-size: 16px;
+}
+
+div.tab button:hover {
+    background-color: #ddd;
+}
+
+div.tab button.active {
+    background-color: #ccc;
+}
+
+.tabcontent {
+    display: none;
+    padding: 3% 1%;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+#users{
+    display: none;
+}
+
+form{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/***************************************************************************
+* Table styling for the materials list on the pair materials with lessons
+****************************************************************************/
+
+#leftSide{
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+#rightSide{
+    width: 49%;
+    padding-left: 50%;
+    text-align: center;
+}
+
+section{
+    position: relative;
+    border: 1px solid #000;
+    padding-top: 37px;
+    background: #0975c3;
+    font-family: "Tahoma", Geneva, sans-serif;
+    overflow-x: visible;
+    overflow-y: hidden;
+}
+
+section.positioned{
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    width: 800px;
+    box-shadow: 0 0 15px #333;
+}
+
+.container {
+    overflow-y: auto;
+    height: 500px;
+}
+
+.materials{
+    border-spacing: 0;
+    width: 100%;
+}
+
+.materials td + td {
+    border-left: 1px solid #eee;
+}
+
+.materials td, th {
+    border-bottom: 1px solid #eee;
+    background: #ddd;
+    color: #000;
+    padding: 10px 25px;
+}
+
+.materials th {
+    height: 0;
+    line-height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    color: transparent;
+    border: none;
+    white-space: nowrap;
+}
+
+.materials th div{
+    position: absolute;
+    background: transparent;
+    color: #fff;
+    padding: 9px 25px;
+    top: 0;
+    margin-left: -25px;
+    line-height: normal;
+    border-left: 1px solid #7d7de8;
+}
+
+.materials th:first-child div{
+    border: none;
+}
+
+.searchResults{
+    display: none;
+    list-style-type: none;
+    max-height: 80px;
+    overflow: auto;
+    background-color: white;
+    z-index: 2;
+    position: absolute;
+    margin-left: 210px;
+    margin-top: 0;
+    width: 234px;
+    text-align: left;
+    padding-left: 2px;
+}
+
+li.liveSearch{
+    border-bottom: 1px solid #f2f2f2;
+}
+
+li.liveSearch:hover{
+    background-color: #0975c3;
+    color: white;
+}
+
+#search{
+    width: 236px;
+}
+
+/**************************************************************
+* Table styling for verify lessons
+***************************************************************/
+
+.lesson_container {
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 500px;
+    width: 2275px;
+}
+
+.lessons{
+    border-spacing: 0;
+    width: 100%;
+}
+
+.lessons td + td {
+    border-left: 1px solid #eee;
+}
+
+.lessons td, th {
+    border-bottom: 1px solid #eee;
+    background: #ddd;
+    color: #000;
+    padding: 10px 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.lessons th {
+    height: 0;
+    line-height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    color: transparent;
+    border: none;
+    white-space: nowrap;
+}
+
+.lessons th div{
+    position: absolute;
+    background: transparent;
+    color: #fff;
+    padding: 9px 25px;
+    top: 0;
+    margin-left: -25px;
+    line-height: normal;
+    border-left: 1px solid #0a84db;
+}
+
+.lessons th:first-child div{
+    border: none;
+}
+
+#buttons{
+    float: left;
+}
+
+#submit{
+    margin: 5px;
+}
+
+/******************************************
+*This is for pairing lessons to topics
+*******************************************/
+
+.topicResults{
+    display: none;
+    list-style-type: none;
+    height: 80px;
+    overflow: auto;
+    background-color: white;
+    z-index: 2;
+    position: absolute;
+    margin-left: 20.5px;
+    margin-top: 0;
+    width: 234px;
+    text-align: left;
+    padding-left: 2px;
+}
+
+li.liveSearch{
+    border-bottom: 1px solid #f2f2f2;
+}
+
+li.liveSearch:hover{
+    background-color: #0975c3;
+    color: white;
+}
+
+#search{
+    width: 236px;
+}
+
+.searchTopic{
+    width: 234px;
+}
+
+/************************************************************
+*This is for verifying reservation of materials for lessons
+*************************************************************/
+
+.calendar_container{
+    padding-bottom: 10px;
+}
+
+.leftContainer{
+    float: left;
+    padding-left: 10px;
+    width: 50%;
+}
+
+.rightContainer{
+    float: left;
+    padding-right: 10px;
+    width: 55%;
+}
+
+.center{
+    width: 37%;
+    padding-left: 63%;
+}
+
+section.verified{
+    background: #0a84db;
+}
+
+section.requested{
+    background: #cc3300;
+}
+
+.dates_container{
+    overflow-y: auto;
+    max-height: 170px;
+}
+
+.requested th div{
+    position: absolute;
+    background: transparent;
+    color: #fff;
+    padding: 9px 25px;
+    top: 0;
+    margin-left: -25px;
+    line-height: normal;
+    border-left: 1px solid #000;
+}
+
+.requested th:first-child div{
+    border: none;
+}
+
+.requested{
+    border-spacing: 0;
+    width: 100%;
+}
+
+.requested td + td {
+    border-left: 1px solid #eee;
+}
+
+.requested td, th {
+    border-bottom: 1px solid #eee;
+    background: #ddd;
+    color: #000;
+    padding: 10px 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.requested th {
+    height: 0;
+    line-height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    color: transparent;
+    border: none;
+    white-space: nowrap;
+}
+
+.verified th div{
+    position: absolute;
+    background: transparent;
+    color: #fff;
+    padding: 9px 25px;
+    top: 0;
+    margin-left: -25px;
+    line-height: normal;
+    border-left: 1px solid #000;
+}
+
+.verified th:first-child div{
+    border: none;
+}
+
+.verified{
+    border-spacing: 0;
+    width: 100%;
+}
+
+.verified td + td {
+    border-left: 1px solid #eee;
+}
+
+.verified td, th {
+    border-bottom: 1px solid #eee;
+    background: #ddd;
+    color: #000;
+    padding: 10px 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.verified th {
+    height: 0;
+    line-height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    color: transparent;
+    border: none;
+    white-space: nowrap;
+}
+
+/************************************************************
+*This is for removing lessons from the database
+*************************************************************/
+
+#lessonRemoval{
+    margin-left: 245px;
+}

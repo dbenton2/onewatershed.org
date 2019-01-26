@@ -1,0 +1,39 @@
+/******************************************************************************************************************
+each section of this document represents a unique feature of the website. The sections are broken up by comments. 
+*******************************************************************************************************************/
+                        
+/*****************************************************************************************
+This is for the animation about how to use the Lesson Selection Wheel
+******************************************************************************************/
+
+.animation{
+    width: 75%;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.content{
+    text-align: center;
+    font-family: "Tahoma", Geneva, sans-serif;
+    font-size: 34px;
+}
+
+/*****************************************************************************************
+This is for the button to take you to the Lesson Selection Wheel
+******************************************************************************************/
+
+.form{
+    text-align: center;
+    padding: 5%;
+}
+
+.form button{
+    border-radius: 4px;
+    background-color: #0975c3;
+    color: white;
+}
+
+.form button:hover{
+    backgdround-color: #0867aa;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}

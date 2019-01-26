@@ -1,0 +1,440 @@
+/**************************************************************************************
+*
+***************************************************************************************/
+
+table.calender{
+    border-collapse: collapse;
+    padding: 15px;
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+
+/**************************************************************************************
+*This section is for the header of the calendar(where the month and year are shown)
+***************************************************************************************/
+#cal {
+    -moz-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+    margin: 25px auto;
+    font: 13px/1.5 "Helvetica Neue", Helvatica, Arial, san-serif;
+    display: table;
+}
+
+.cal_header {
+    cursor: default;
+    background: #cd310d;
+    background: -moz-linear-gradient(top, #2d2dd2, #0066ff);
+    background: -webkit-gradient(linear, left top, left bottom, from(#2d2dd2), to(#0066ff));
+    height: 34px;
+    position: relative;
+    color: #fff;
+    -webkit-border-top-left-radius: 5px; 
+    -webkit-border-top-right-radius: 5px; 
+    -moz-border-radius-topleft: 5px; 
+    -moz-border-radius-topright: 5px; 
+    border-top-left-radius: 5px; 
+    border-top-right-radius: 5px; 
+    font-weight: bold;
+    text-shadow: 0px -1px 0 #2d2dd2;
+    text-transform: uppercase;
+}
+
+ .cal_header span {
+    display: inline-block;
+    line-height: 34px;
+}
+
+.cal_header .button {
+    width: 24px;
+    text-align: center;
+    position: absolute;
+}
+
+.cal_header .left.button{
+    left: 0;
+    -webkit-border-top-left-radius: 5px; 
+    -moz-border-radius-topleft: 5px; 
+    border-top-left-radius: 5px; 
+    border-right: 1px solid #2d2dd2;
+}
+
+.cal_header .right.button{
+    right:0; 
+    top:0; 
+    border-left:1px solid #2d2dd2; 
+    -webkit-border-top-right-radius: 5px; 
+    -moz-border-radius-topright: 5px; 
+    border-top-right-radius: 5px; 
+}
+
+.cal_header .button:hover{
+    background: -moz-linear-gradient(top, #0066ff, #2d2dd2); 
+    background: -webkit-gradient(linear, left top, left bottom, from(#0066ff), to(#2d2dd2)); 
+}
+
+.cal_header .month-year{
+    letter-spacing: 1px;
+    width: 100%;
+    text-align: center;
+}
+
+
+/*****************************************************************
+*This section covers the day headers for the calendar
+******************************************************************/
+
+tbody.cal{
+   height: initial;
+   display: table;
+}
+tr.cal{
+    background: #fff;
+    width: 100%;
+}
+
+table.curr{
+   padding-bottom: 15px;
+}
+
+#cal table {
+   background: #fff;
+   border-collapse:collapse;
+   padding-top: 15px;
+   padding-left: 15px;
+   padding-bottom: 0;
+   padding-right: 15px;
+   width: 100%;
+   
+}
+
+#days{
+    min-width: 12.5%; 
+}
+
+.calendar td{
+   height: 30px;
+   line-height: 30px;
+   text-align: center;
+   cursor: default;
+}
+
+#days td{
+    text-transform: uppercase;
+    font-size: 90%;
+    color: #9e9e9e;
+    padding: 0;
+    min-width: 14%;
+    max-width: 16%;
+}
+
+#days td:not(:last-child) {
+    border-right: 1px solid #fff;
+}
+
+/**************************************************************
+*This section covers the numbered days for the calendar
+***************************************************************/
+.monthPre{
+ color: gray;
+ text-align: center;
+ border: 1px solid #e6e6e6;
+ padding-left: 10px;
+ padding-right: 10px;
+  padding-top: 0px;
+ padding-bottom: 0px;
+ min-width: 14%;
+ max-width: 25%;
+    height: 30px;
+   line-height: 30px;
+      cursor: default;
+}
+
+.monthNex{
+ color: gray;
+ text-align: center;
+ border: 1px solid #e6e6e6;
+ padding-left: 10px;
+ padding-right: 10px;
+  padding-top: 0px;
+ padding-bottom: 0px;
+  min-width: 14%;
+ max-width: 25%;
+    height: 30px;
+   line-height: 30px;
+      cursor: default;
+}
+
+.dayNow{
+ border: 2px solid black;
+ color: #0a84db;
+ text-align: center;
+ padding-left: 10px;
+ padding-right: 10px;
+  padding-top: 0px;
+ padding-bottom: 0px;
+  min-width: 14%;
+ max-width: 25%;
+    height: 30px;
+   line-height: 30px;
+      cursor: default;
+}
+
+.dayReserved{
+    color: #fff;
+ text-align: center;
+ padding-left: 10px;
+ padding-right: 10px;
+  padding-top: 0px;
+ padding-bottom: 0px;
+  min-width: 14%;
+ max-width: 25%;
+    height: 30px;
+   line-height: 30px;
+      cursor: default;
+      background: #0a84db;
+}
+
+.monthNow {
+ text-align: center;
+ border: 1px solid #e6e6e6;
+ padding-left: 10px;
+ padding-right: 10px;
+ padding-top: 0px;
+ padding-bottom: 0px;
+  min-width: 14%;
+ max-width: 25%;
+}
+
+.dayNames{
+ background: #0FF000;
+ color: #FFFFFF;
+ text-align: center;
+}
+
+.curr{
+ padding-bottom: 15px;
+}
+
+tbody{
+ height: auto;
+ overflow: initial;
+ width: 100%;
+}
+
+#cal-frame td{
+    min-width: 14.75%;
+    max-width: 16%;
+}
+
+#cal-frame td.today {
+    background: #ededed;
+    color: #8c8c8c;
+    box-shadow:1px 1px 0px #fff inset; 
+    -moz-box-shadow:1px 1px 0px #fff inset; 
+    -webkit-box-shadow:1px 1px 0px #fff inset; 
+}
+
+#cal-frame td:not(.nil):hover {
+    color: #fff;
+    text-shadow: #0066ff 0px -1px;
+    background: #CD310D;
+    background: -moz-linear-gradient(top, #2d2dd2, #0066ff); 
+    background: -webkit-gradient(linear, left top, left bottom, from(#2d2dd2), to(#0066ff)); 
+    -moz-box-shadow:0px 0px 0px; 
+    -webkit-box-shadow:0px 0px 0px; 
+}
+
+/******************************************************************
+*Incase a cell needs to show two dates at once
+*******************************************************************/
+
+#cal-frame td span {
+     font-size: 80%;
+     position: relative;
+}
+
+#cal-frame td span:first-child {
+     bottom: 5px;
+}
+
+#cal-frame td span:last-child {
+     top: 5px;
+}
+
+/********************************************************************
+*For larger Calendar
+*********************************************************************/
+
+.large_header {
+    cursor: default;
+    background: #cd310d;
+    background: -moz-linear-gradient(top, #2d2dd2, #0066ff);
+    background: -webkit-gradient(linear, left top, left bottom, from(#2d2dd2), to(#0066ff));
+    height: 50px;
+    position: relative;
+    color: #fff;
+    -webkit-border-top-left-radius: 5px; 
+    -webkit-border-top-right-radius: 5px; 
+    -moz-border-radius-topleft: 5px; 
+    -moz-border-radius-topright: 5px; 
+    border-top-left-radius: 5px; 
+    border-top-right-radius: 5px; 
+    font-weight: bold;
+    text-shadow: 0px -1px 0 #0066ff;
+    text-transform: uppercase;
+}
+
+ .large_header span {
+    display: inline-block;
+    line-height: 50px;
+}
+
+.large_header .button {
+    width: 30px;
+    height: 50px;
+    text-align: center;
+    position: absolute;
+}
+
+.large_header .left.button{
+    left: 0;
+    -webkit-border-top-left-radius: 5px; 
+    -moz-border-radius-topleft: 5px; 
+    border-top-left-radius: 5px; 
+    border-right: 1px solid #2d2dd2;
+}
+
+.large_header .right.button{
+    right:0; 
+    top:0; 
+    border-left:1px solid #2d2dd2; 
+    -webkit-border-top-right-radius: 5px; 
+    -moz-border-radius-topright: 5px; 
+    border-top-right-radius: 5px; 
+}
+
+.large_header .button:hover{
+    background: -moz-linear-gradient(top, #0066ff, #2d2dd2); 
+    background: -webkit-gradient(linear, left top, left bottom, from(#0066ff), to(#2d2dd2)); 
+}
+
+.large_header .month-year{
+    letter-spacing: 1px;
+    width: 100%;
+    text-align: center;
+}
+
+.largeMonthPre{
+ color: gray;
+ text-align: center;
+ border: 1px solid #e6e6e6;
+ padding-left: 30px;
+ padding-right: 30px;
+  padding-top: 0px;
+ padding-bottom: 0px;
+ min-width: 14%;
+ max-width: 25%;
+    height: 30px;
+   line-height: 30px;
+      cursor: default;
+}
+
+.largeMonthNex{
+ color: gray;
+ text-align: center;
+ border: 1px solid #e6e6e6;
+ padding-left: 30px;
+ padding-right: 30px;
+  padding-top: 0px;
+ padding-bottom: 0px;
+  min-width: 14%;
+ max-width: 25%;
+    height: 30px;
+   line-height: 30px;
+      cursor: default;
+}
+
+.largeDayNow{
+ border: 2px solid black;
+ color: #0a84db;
+ text-align: center;
+ padding-left: 30px;
+ padding-right: 30px;
+  padding-top: 0px;
+ padding-bottom: 0px;
+  min-width: 14%;
+ max-width: 25%;
+    height: 30px;
+   line-height: 30px;
+      cursor: default;
+}
+
+.largeDayRequested{
+ border: 2px solid black;
+ color: #000000;
+ text-align: center;
+ padding-left: 30px;
+ padding-right: 30px;
+  padding-top: 0px;
+ padding-bottom: 0px;
+  min-width: 14%;
+ max-width: 25%;
+    height: 30px;
+   line-height: 30px;
+      cursor: default;
+      background: #cc3300;
+}
+
+.largeDayVerified{
+ border: 2px solid black;
+ color: #000000;
+ text-align: center;
+ padding-left: 30px;
+ padding-right: 30px;
+  padding-top: 0px;
+ padding-bottom: 0px;
+  min-width: 14%;
+ max-width: 25%;
+    height: 30px;
+   line-height: 30px;
+      cursor: default;
+      background: #0a84db;
+}
+
+.largeMonthNow {
+ text-align: center;
+ border: 1px solid #e6e6e6;
+ padding-left: 30px;
+ padding-right: 30px;
+ padding-top: 0px;
+ padding-bottom: 0px;
+  min-width: 14%;
+ max-width: 25%;
+}
+
+.largeCalendar td{
+   height: 65px;
+   line-height: 30px;
+   text-align: center;
+   cursor: default;
+}
+
+#largeCal {
+    -moz-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+    margin: 25px auto;
+    font: 18px/1.5 "Helvetica Neue", Helvatica, Arial, san-serif;
+    display: table;
+}
+
+#largeCal table {
+   background: #fff;
+   border-collapse:collapse;
+   padding-top: 15px;
+   padding-left: 15px;
+   padding-bottom: 0;
+   padding-right: 15px;
+   width: 100%;
+   
+}

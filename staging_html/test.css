@@ -1,0 +1,34 @@
+
+.searchResults{
+    display: none;
+    list-style-type: none;
+    height: 80px;
+    overflow: auto;
+    background-color: white;
+    z-index: 2;
+    position: absolute;
+    margin-left: 210px;
+    margin-top: 0;
+    width: 234px;
+    text-align: left;
+    padding-left: 2px;
+}
+
+li{
+    border-bottom: 1px solid #f2f2f2;
+}
+
+li:hover{
+    background-color: #0975c3;
+    color: white;
+}
+
+#search{
+    width: 236px;
+}
+
+#news_feed{
+    width: 90%;
+    height: 60%;
+    margin: 10% 5% 0 5%;
+}

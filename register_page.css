@@ -1,0 +1,75 @@
+/******************************************************************************************************************
+each section of this document represents a unique feature of the website. The sections are broken up by comments. 
+*******************************************************************************************************************/
+
+/*******************************
+This section is for the form
+********************************/
+
+form{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 10px;
+    border-radius: 4px;
+}
+
+#form{
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+fieldset{
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: left;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 15px;
+}
+
+#leftSide{
+    float: left;
+    width: 50%;
+}
+
+#usernameInput{
+    margin-left: 68px;
+}
+
+#passwordInput{
+    margin-left: 71px;
+}
+
+#password2Input{
+    margin-left: 10px;
+}
+
+#emailInput{
+    margin-left: 102px;
+}
+
+#nameInput{
+    margin-left: 10px;
+}
+
+#name2Input{
+    margin-left: 10px;
+}
+
+#organizationInput{
+    margin-left: 107px;
+}
+
+#languageInput{
+    margin-left: 37px;
+}
+
+#gradeInput{
+    margin-left: 10px;
+}
+
+#info{
+    float: right;
+}

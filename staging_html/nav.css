@@ -1,0 +1,381 @@
+/******************************************************************************************************************
+each section of this document represents a unique feature of the website. The sections are broken up by comments. 
+*******************************************************************************************************************/
+
+/******************************************************************************************************************
+This section is for general purpose things that all pages need 
+*******************************************************************************************************************/
+
+html,body{
+    background-color: #f7f7f7;
+    height: 100%;
+} 
+
+#holder{
+      min-height: calc(1500px - 25vw);
+      font-family: Arial, Helvetica, sans-serif;
+  }
+       
+#body{
+    padding-bottom: 250px;
+}
+     
+/***********************************************************************************
+This is the navigation bar at the top of the screen
+************************************************************************************/
+
+ul.nav{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    list-style-type: none;
+    padding: 0px;
+    overflow: hidden;
+    background-color: #5f5f5f;
+    font-size: 19px;
+    max-height: 15%;
+    z-index: 1;
+    font-family: "Tahoma", Geneva, sans-serif;
+}
+
+li.object{
+    float: left;
+    min-height: 10%;
+    max-height: 15%;
+}
+
+li a.link{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active).link{
+    background-color: #0a84db;
+}
+
+#active{
+    background-color: #0a84db;
+}
+       
+.nav{
+    margin-bottom: 2%;
+    position: relative;
+    top: 0;
+    left: 0;
+    min-height: 30px;
+    max-height: 5%;
+    width: 100%;
+    padding: 0px;
+}  
+    
+div.title{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    left: 0;
+}
+         
+img.title{
+    display: block;
+    margin: auto;
+    width: 40%;
+    text-align: center;
+} 
+  
+h1{
+    text-align: center;
+    margin: 0;
+    padding: 1%;
+    font-size: 20px;
+    font-family: "Tahoma", Geneva, sans-serif;
+}       
+  
+img.logo{
+    position: fixed;
+    top: 0;
+    right: 3.5%;
+    max-height: 4.5%;
+    display: block;
+    margin: auto;
+    padding-top: .2%;
+    padding-bottom: 2px;
+    padding-left: .5%;
+    padding-right: .5%;
+    z-index: 1;
+} 
+
+img.logo:hover{
+    background-color: #0a84db;
+}        
+
+/*********************************************************************************************************************
+This is all for the bottom of the page. There are two imagages and links to the college's website and CES's website.
+**********************************************************************************************************************/
+
+footer{
+    height: 5%;
+    position: absolute;
+    left: 0;
+    min-width: 100%;
+    padding: 1%;
+}      
+      
+img.CES{
+    display: inline-block;
+    margin: .5%;
+    min-height: 1%;
+    max-height: 70px;
+    background-color: #5f5f5f;    
+}
+       
+img.WAC{
+    display: inline-block;
+    margin: 1%;
+    min-height: 1%;
+    max-height: 70px;
+    background-color: #5f5f5f;    
+}
+       
+div.CES{
+    background-color: #5f5f5f;
+    width: 100%;
+    height: 100%;
+} 
+       
+#images{
+    background-color: #5f5f5f;
+    text-align: center;
+    position: relative;
+    left: -10;
+    min-width: 101%;
+    min-height: 9%;
+    margin-top: 2%;
+}    
+
+/*********************************************************************************************************************
+This is for the search bar found in the navigation bar at the top of the screen
+**********************************************************************************************************************/
+.search{
+    position: fixed;
+    right: 6.5%;
+    top: 1.5%;
+    border-radius: 4px;
+    width: 160px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    z-index: 1;
+    font-family: "Tahoma", Geneva, sans-serif;
+}
+
+.search:focus{
+    width: 30%;
+    z-index: 1;
+}
+ 
+button.search{
+    position: fixed;
+    right: 6.5%;
+    top: 1.5%;
+    width: 24px;
+    height: 23px;
+    border: 1px solid #ccc;
+    padding: 2px;
+}  
+
+button.search:focus{
+    width: 24px;
+}
+ 
+img.search{
+    width: 22px;
+    z-index: 2;
+    cursor: pointer;
+}
+ 
+img.search:focus{
+    width: 22px;
+}
+
+.searchBarResults{
+    display: none;
+    list-style-type: none;
+    max-height: 80px;
+    overflow: auto;
+    background-color: white;
+    z-index: 2;
+    position: absolute;
+    margin-top: -9px;
+    width: 29%;
+    text-align: left;
+    padding-left: 2px;
+    right: 7.25%;
+    border-radius: 4px;
+}
+
+li.subjectSearch{
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+}
+
+li.subjectSearch:hover{
+    background-color: #0975c3;
+    color: white;
+}
+
+input[type=text]{
+    border-radius: 4px;
+    border: 1px solid #525252;
+}
+
+input[type=email]{
+    border-radius: 4px;
+    border: 1px solid #525252;
+}
+
+input[type=password]{
+    border-radius: 4px;
+    border: 1px solid #525252;
+}
+
+button{
+    border-radius: 4px;
+    border: 1px solid #525252;
+}
+
+select{
+    border-radius: 4px;
+    border: 1px solid #525252;
+    font-family: Arial, Helvetica, sans-serif;
+}  
+
+/*********************************************************************************************************
+*This is for the tool tip and help modal
+**********************************************************************************************************/ 
+
+.nav_tooltip{
+    position: relative;
+    display: inline-block;
+}
+
+.nav_tooltip .tooltiptext{
+    visibility: hidden;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: fixed;
+    z-index: 2;
+    width: 120px;
+    top: 5%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: 1s;
+    right: .25%;
+    font-family: Aerial, Helvetica, sans-serif;
+}
+
+.nav_tooltip .tooltiptext::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50px;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.nav_tooltip:hover .tooltiptext{
+    visibility: visible;
+    opacity: 1;
+}
+
+#help{
+    right: .5%;
+}
+
+#login{
+    right: 3%;
+    width: 60px;
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 3;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}                    
+
+.modal-content{
+    background-color: #fefefe;
+    margin: 3% auto;
+    height: 80%;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close{
+    position: relative;
+    color: #ffffff;
+    top: 0;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.close:hover, .close:focus{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal_image{
+    height: 80%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.modal_header{
+    padding: 4px 16px;
+    position: fixed;
+    width: 78.5%;
+    z-index: 3;
+    background-color: #0975c3;
+    color: white;
+}
+
+.modal_body{
+    padding: 2px 16px;
+    margin-top: 4%;
+    overflow: auto;
+    height: 91.5%;
+    text-align: center;
+    font-family: Aerial, Helvetica, sans-serif;
+    background-color: #f7f7f7;
+}
+
+.modal_animation{
+    width: 80%;
+}
+
+/*********************************************************************************************************
+*This is for the register page validation checks
+**********************************************************************************************************/ 
+
+.error{
+    color: #ff0000;
+    cursor: pointer;
+}

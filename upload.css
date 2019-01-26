@@ -1,0 +1,231 @@
+/******************************************************************************************************************
+each section of this document represents a unique feature of the website. The sections are broken up by comments. 
+*******************************************************************************************************************/
+
+/*********************************************************************************************************************
+*This section is for the upload page form.
+**********************************************************************************************************************/
+
+form{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 10px;
+    border-radius: 4px;
+}
+
+input[type=text]{
+    width: 165px;
+}
+
+fieldset{
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: left;
+}
+
+.form{
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 15px;
+}
+
+td.checkbox{
+    padding: 5px;
+    min-width: initial;
+    max-width: initial;
+    text-align: right;
+}
+
+table.checkbox{
+    width: initial;
+    display: table;
+    padding-left: 20px;
+}
+
+tbody.checkbox{
+    height: auto;
+}
+
+.error{
+    color: #ff0000;
+}
+
+#language{
+    padding-left: 59px;
+}
+
+#languageInput{
+    margin-left: 10px;
+    border-radius: 4px;
+}
+
+#lessonName{
+    padding-left: 32px;
+}
+
+#lessonInput{
+    margin-left: 10px;
+    border-radius: 4px;
+}
+
+#primarySubject{
+    padding-left: 22px;
+}
+
+#primarySubjectInput{
+    margin-left: 10px;
+    border-radius: 4px;
+}
+
+#secondarySubject{
+    padding-left: 12px;
+}
+
+#secondarySubjectInput{
+    margin-left: 10px;
+    border-radius: 4px;
+}
+
+#standard1{
+    padding-left: 56px;
+}
+
+#standardInput1{
+    margin-left: 10px;
+    border-radius: 4px;
+}
+
+#standard2{
+    padding-left: 65px;
+    padding-right: 40px;
+}
+
+#standardInput2{
+    margin-left: 10px;
+    border-radius: 4px;
+}
+
+#standard3{
+    padding-left: 65px;
+}
+
+#standardInput3{
+    margin-left: 10px;
+    border-radius: 4px;
+}
+
+#standard4{
+    padding-left: 65px;
+}
+
+#standardInput4{
+    margin-left: 10px;
+    border-radius: 4px;
+}
+
+#standard5{
+    padding-left: 65px;
+}
+
+#standardInput5{
+    margin-left: 10px;
+    border-radius: 4px;
+}
+
+#standard6{
+    padding-left: 65px;
+}
+
+#standardInput6{
+    margin-left: 10px;
+    border-radius: 4px;
+}
+
+#grade{
+}
+
+#document{
+    text-align: center
+}
+
+.leftSide{
+    float: left;
+    width: 50%;
+}
+
+.bottom{
+    padding-top: 20px;
+}
+
+.middle{
+    padding-top: 20px;
+}
+
+/*****************************
+*Live Search Stuff
+******************************/
+
+.searchResults{
+    display: none;
+    list-style-type: none;
+    max-height: 66px;
+    overflow: auto;
+    background-color: white;
+    z-index: 2;
+    position: absolute;
+    margin-left: 85px;
+    margin-top: 0;
+    width: 165px;
+    text-align: left;
+    padding-left: 2px;
+    border-radius: 4px;
+}
+
+li.subejctSearch{
+    border: 1px solid #f2f2f2;
+}
+
+li.subjectSearch:hover{
+    background-color: #0975c3;
+    color: white;
+}
+
+#languageSearch{
+    margin-left: 100px;
+}
+
+#primarySubjectSearch{
+    margin-left: 137px;
+}
+
+#secondarySubjectSearch{
+    margin-left: 147px;
+}
+
+#standardSearch1{
+    margin-left: 100px;
+}
+
+#standardSearch2{
+    margin-left: 92px;
+}
+
+#standardSearch3{
+    margin-left: 91px;
+}
+
+#standardSearch4{
+    margin-left: 565px;
+}
+
+#standardSearch5{
+    margin-left: 565px;
+}
+
+#standardSearch6{
+    margin-left: 565px;
+}
